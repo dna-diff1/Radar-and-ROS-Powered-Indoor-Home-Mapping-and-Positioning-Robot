@@ -1,0 +1,8 @@
+<launch>
+  <!-- SLAM -->
+  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch"/> 
+    
+  <!-- Explore_node_Map_node -->
+  <node pkg="acs6121_team4" type="exploration.py" name="explore_node" output="screen"/>
+  
+</launch>
